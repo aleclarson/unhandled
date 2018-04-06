@@ -1,4 +1,4 @@
-# unhandled v0.0.1
+# unhandled v1.0.0
 
 Sets `process.unhandled` to a function that can be used to
 do something when a process event has no other listeners.
