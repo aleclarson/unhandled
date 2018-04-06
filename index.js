@@ -14,12 +14,12 @@ if (!process.unhandled) {
   })
 
   unhandled('uncaughtException', (err) => {
-    console.error('(uncaught) ' + err.stack)
+    console.error('(uncaught) ' + (err.stack || err))
     process.exit(1)
   })
 
   unhandled('unhandledRejection', (err) => {
-    console.error('(rejected) ' + err.stack)
+    console.error('(rejected) ' + (err.stack || err))
     process.exit(1)
   })
 }
