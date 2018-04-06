@@ -17,5 +17,10 @@ if (!process.unhandled) {
     console.error('uncaught ' + err.stack)
     process.exit(1)
   })
+
+  unhandled('unhandledRejection', (err) => {
+    console.error('rejected ' + err.stack)
+    process.exit(1)
+  })
 }
 
