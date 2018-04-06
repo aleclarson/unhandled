@@ -24,3 +24,5 @@ if (!process.unhandled) {
   })
 }
 
+module.exports = process.unhandled
+
